@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useEffect, useState } from 'react';
 import BottomSheet from './components/BottomSheet';
 import ThemeToggle from './components/ThemeToggle';
