@@ -12,7 +12,7 @@ const BottomSheet = () => {
   const windowHeight = window.innerHeight;
 
   const snapPoints = {
-    full: 50, // 50px from top
+    full: 50, 
     half: windowHeight / 2,
     closed: windowHeight - 80,
   };
