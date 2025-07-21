@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# React Bottom Sheet Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and accessible **Bottom Sheet** component built using **React**. It supports **keyboard navigation**, **smooth snap transitions**, and **accessibility features**, making it user-friendly across devices.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ Smooth snap animations
+- ✅ Keyboard support (↑ ↓ Esc)
+- ✅ Accessible with ARIA roles
+- ✅ Responsive on all devices
+- ✅ Easily customizable and extendable
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- React (via Create React App)
+- JavaScript (ES6+)
+- CSS (no UI framework used)
+- Git for version control
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+react-bottom-sheet/
+│
+├── public/ # Static files
+│ └── index.html
+│
+├── src/ # React source code
+│ ├── components/ # Reusable components
+│ │ └── BottomSheet.jsx # Bottom sheet logic
+│ │
+│ ├── styles/ # Custom CSS
+│ │ └── bottomsheet.css # Styles for bottom sheet
+│ │
+│ ├── App.js # Root app component
+│ ├── index.js # ReactDOM entry point
+│ └── index.css # Global styles
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js (if using Vite)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧑‍💻 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/Muskankapoor07/Flam_Frontend_Assignment.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd react-bottom-sheet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install Dependencies
+npm install
+Run the Application Locally
+npm start
+This will run your app on http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🎹 Keyboard & Accessibility Support
+↑ and ↓ arrow keys move the sheet between snap points.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ESC closes the bottom sheet.
 
-## Learn More
+ARIA attributes are included for screen reader compatibility.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Use tab to navigate through buttons.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deployment on Netlify
+1. Create a Production Build
 
-### Code Splitting
+npm run build
+This will generate a dist/ (Vite) or build/ (CRA) folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Deploy to Netlify
+Visit https://app.netlify.com
 
-### Analyzing the Bundle Size
+Click “Add new site” > “Import an existing project”
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Connect your GitHub repo
 
-### Making a Progressive Web App
+Choose build command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For Vite: npm run build
 
-### Advanced Configuration
+For CRA: npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Set publish directory:
 
-### Deployment
+For Vite: dist
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+For CRA: build
 
-### `npm run build` fails to minify
+Click Deploy Site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ Optional: Live Demo Link
+Once deployed, you can add:
+
+md
+
+## 🔗 Live Demo
+
+Check it out here: [Live App](https://your-project-name.netlify.app/)
+🤝 Contributing
+Contributions are welcome! Feel free to fork the repo, create a feature branch, and submit a pull request.
+
+📄 License
+This project is licensed under the MIT License.
+
+🙌 Acknowledgments
+Thanks to Netlify for free hosting and to all open-source tools that made this project possible.
